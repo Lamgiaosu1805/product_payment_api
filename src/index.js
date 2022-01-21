@@ -1,19 +1,25 @@
-const express = require('express')
-const morgan = require('morgan')
+const express = require('express');
+const morgan = require('morgan');
+const path = require('path');
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
+
+const route = require('./routes');
 
 //config static file
-// app.use(express.static(path.join))
+app.use(express.static(path.join(__dirname, 'public')));
 
 //use Middlewares
-app.use(morgan('dev'))
+app.use(morgan('dev'));
+app.use(express.urlencoded({
+  extended: true 
+}));
+app.use(express.json());
 
-app.get('/', (req, res) => {
-  // res.send('HÊLO LÂM GS!')
-})
+//Routing
+route(app);
 
 app.listen(port, () => {
-  console.log(`App listening on port ${port}`)
+  console.log(`App listening on port ${port}`);
 })
