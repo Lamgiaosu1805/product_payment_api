@@ -1,5 +1,5 @@
 const express = require('express');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const path = require('path');
 
 const app = express();
@@ -15,7 +15,7 @@ db.connect();
 app.use(express.static(path.join(__dirname, 'public')));
 
 //use Middlewares
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(express.urlencoded({
   extended: true 
 }));
