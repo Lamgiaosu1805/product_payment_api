@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Lamgiaosu1805/product_payment_api#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
