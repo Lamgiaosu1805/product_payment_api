@@ -1,0 +1,22 @@
+{
+  "name": "product_payment_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lamgiaosu1805/product_payment_api.git"
+  },
+  "author": "lamgs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lamgiaosu1805/product_payment_api/issues"
+  },
+  "homepage": "https://github.com/Lamgiaosu1805/product_payment_api#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
