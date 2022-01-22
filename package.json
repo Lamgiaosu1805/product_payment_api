@@ -20,7 +20,8 @@
   "dependencies": {
     "express": "^4.17.2",
     "mongoose": "^6.1.7",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "sequelize-v5": "^1.0.0"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
