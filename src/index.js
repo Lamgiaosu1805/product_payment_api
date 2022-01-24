@@ -6,10 +6,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const route = require('./routes');
-const db = require('./config/db');
+
+const myModule = require('./config/db');
 
 //Connec to DB
-db.connect();
+const connect = myModule.connect;
+connect();
 
 //config static file
 app.use(express.static(path.join(__dirname, 'public')));
