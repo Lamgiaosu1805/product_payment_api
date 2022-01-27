@@ -6,9 +6,7 @@ const sequelize = new Sequelize('sql6467268', 'sql6467268', 'lamlovequynh1', {
     dialect: 'mysql',
     define: {
         timestamps: true,
-        underscored: true,
-        charset: 'utf8',
-        collate: 'utf8_general_ci',
+        underscored: true
     }
 });
 
