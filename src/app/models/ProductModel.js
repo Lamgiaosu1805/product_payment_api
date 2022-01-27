@@ -3,8 +3,6 @@ const myModule = require('../../config/db/index');
 
 const sequelize = myModule.sequelize;
 
-const Model = Sequelize.Model;
-
 const Product = sequelize.define('product', {
     //attributes
     id: {
@@ -19,7 +17,7 @@ const Product = sequelize.define('product', {
     },
     name: {
         type: Sequelize.TEXT,
-        allowNull: true
+        allowNull: true,
     },
     price: {
         type: Sequelize.INTEGER,
@@ -28,6 +26,8 @@ const Product = sequelize.define('product', {
     }
 }, {
     timestamps: true,
+    charset: 'utf8',
+    collate: 'utf8_unicode_ci'
 });
 
 module.exports = Product;
